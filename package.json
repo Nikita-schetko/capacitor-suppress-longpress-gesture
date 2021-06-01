@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-suppress-longpress",
+  "name": "capacitor-suppress-longpress-gesture",
   "version": "0.0.1",
   "description": "This plugin allows to suppress longpress gesture in iOs system. Designed for capacitor v3",
   "main": "dist/plugin.cjs.js",
@@ -15,10 +15,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nikita-schetko/capacitor-suppress-longpress.git"
+    "url": "git+https://github.com/Nikita-schetko/capacitor-suppress-longpress-gesture.git"
   },
   "bugs": {
-    "url": "https://github.com/Nikita-schetko/capacitor-suppress-longpress/issues"
+    "url": "https://github.com/Nikita-schetko/capacitor-suppress-longpress-gesture/issues"
   },
   "keywords": [
     "capacitor",

@@ -1,11 +1,10 @@
-# capacitor-suppress-longpress
-
+# capacitor-suppress-longpress-gesture
 This plugin allows to suppress longpress gesture in iOs system. Designed for capacitor v3
 
 ## Install
 
 ```bash
-npm install capacitor-suppress-longpress
+npm install capacitor-suppress-longpress-gesture
 npx cap sync
 ```
 
@@ -15,7 +14,7 @@ npx cap sync
 Just import it in your 'app' component, and call activateService() method! 
 
 ```
-import { SuppressLongpressGesture } from 'capacitor-suppress-longpress';
+import { SuppressLongpressGesture } from 'capacitor-suppress-longpress-gesture';
 SuppressLongpressGesture.activateService();
 ```
 
