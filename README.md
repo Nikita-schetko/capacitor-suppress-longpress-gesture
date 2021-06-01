@@ -9,6 +9,16 @@ npm install capacitor-suppress-longpress
 npx cap sync
 ```
 
+
+## Usage 
+
+Just import it in your 'app' component, and call activateService() method! 
+
+```
+import { SuppressLongpressGesture } from 'capacitor-suppress-longpress';
+SuppressLongpressGesture.activateService();
+```
+
 ## API
 
 <docgen-index>
