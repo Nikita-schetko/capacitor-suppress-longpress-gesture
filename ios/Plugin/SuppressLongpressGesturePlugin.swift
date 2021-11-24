@@ -32,7 +32,23 @@ public class SuppressLongpressGesturePlugin: CAPPlugin {
         ])
     }
 
+    @objc func setWebviewBackground(_ call: CAPPluginCall) {
+        let value = call.getString("value") ?? ""
+        if value == "Black" {
+            let webView = self.bridge?.webView
+            webView?.backgroundColor = UIColor.black;
+        }
+        if value == "White" {
+            let webView = self.bridge?.webView
+            webView?.backgroundColor = UIColor.white;
+        }
+        call.resolve([
+            "value": implementation.echo(value)
+        ])
+    }
+
     @objc func handleLongpressGesture() {
         print("Long-press gesture suppressed")
     }
 }
+
