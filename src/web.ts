@@ -14,4 +14,9 @@ export class SuppressLongpressGestureWeb
     console.warn('activateLongPressSuppression not supported for web');
     return 'activateLongPressSuppression not supported for web';
   }
+
+  async deactivateService(): Promise<string> {
+    console.warn('deactivateLongPressSuppression not supported for web');
+    return 'deactivateLongPressSuppression not supported for web';
+  }
 }

@@ -25,6 +25,20 @@ public class SuppressLongpressGesturePlugin: CAPPlugin {
         }
     }
 
+    @objc func deactivateService(_ call: CAPPluginCall) {
+    print("DEactivate Service!")
+    let webView = self.bridge?.webView
+
+    // add this in main thread
+    DispatchQueue.main.async {
+        for recognizer in webView?.gestureRecognizers ?? [] {
+            webView?.removeGestureRecognizer(recognizer)
+        }
+        // resolve plugin call
+        call.resolve()
+    }
+}
+
     @objc func echo(_ call: CAPPluginCall) {
         let value = call.getString("value") ?? ""
         call.resolve([

@@ -24,6 +24,7 @@ SuppressLongpressGesture.activateService();
 
 * [`echo(...)`](#echo)
 * [`activateService()`](#activateservice)
+* [`deactivateService()`](#deactivateservice)
 
 </docgen-index>
 
@@ -49,6 +50,17 @@ echo(options: { value: string; }) => any
 
 ```typescript
 activateService() => any
+```
+
+**Returns:** <code>any</code>
+
+--------------------
+
+
+### deactivateService()
+
+```typescript
+deactivateService() => any
 ```
 
 **Returns:** <code>any</code>

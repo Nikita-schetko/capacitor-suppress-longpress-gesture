@@ -6,6 +6,10 @@ import Foundation
     }
 
     @objc public func activateService() -> String {
-        return "SuppressLongPress checked service"
+        return "SuppressLongPress activated"
+    }
+
+    @objc public func deactivateService() -> String {
+        return "SuppressLongPress deactivated"
     }
 }
