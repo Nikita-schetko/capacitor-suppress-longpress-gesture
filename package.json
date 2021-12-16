@@ -1,7 +1,7 @@
 {
   "name": "capacitor-suppress-longpress-gesture",
-  "version": "0.0.3",
-  "description": "This plugin allows to suppress longpress gesture in iOs system. Designed for capacitor v3. Optional, you can set WKWebView background",
+  "version": "0.0.2",
+  "description": "This plugin allows to suppress longpress gesture in iOs system. Designed for capacitor v3",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",

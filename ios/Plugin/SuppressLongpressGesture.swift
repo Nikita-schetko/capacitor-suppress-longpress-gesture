@@ -8,8 +8,4 @@ import Foundation
     @objc public func activateService() -> String {
         return "SuppressLongPress checked service"
     }
-
-    @objc public func setWebviewBackground() -> String {
-        return "SuppressLongPress setWebviewBackground"
-    }
 }

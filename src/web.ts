@@ -14,9 +14,4 @@ export class SuppressLongpressGestureWeb
     console.warn('activateLongPressSuppression not supported for web');
     return 'activateLongPressSuppression not supported for web';
   }
-
-  async setWebviewBackground(color: 'Black'|'White'): Promise<string> {
-    console.warn('setWebviewBackground not supported for web; requested color: ', color);
-    return 'setWebviewBackground not supported for web';
-  }
 }

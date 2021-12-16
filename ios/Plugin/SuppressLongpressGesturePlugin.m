@@ -6,5 +6,4 @@
 CAP_PLUGIN(SuppressLongpressGesturePlugin, "SuppressLongpressGesture",
            CAP_PLUGIN_METHOD(echo, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(activateService, CAPPluginReturnPromise);
-           CAP_PLUGIN_METHOD(setWebviewBackground, CAPPluginReturnPromise);
 )
