@@ -56,6 +56,5 @@ public class SuppressLongpressGesturePlugin: CAPPlugin {
     }
 
     @objc func handleLongpressGesture() {
-        print("Long-press gesture suppressed")
     }
 }
