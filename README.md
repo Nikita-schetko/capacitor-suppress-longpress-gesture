@@ -1,5 +1,5 @@
 # capacitor-suppress-longpress-gesture
-This plugin allows to suppress longpress gesture in iOs system. Designed for capacitor v3
+This plugin allows to suppress longpress gesture in iOs system. Designed for capacitor v3 and also supports capacitor v4 (Thanks to @mariusbolik)
 
 ## Install
 
