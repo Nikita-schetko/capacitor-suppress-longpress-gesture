@@ -34,14 +34,14 @@ SuppressLongpressGesture.activateService();
 ### echo(...)
 
 ```typescript
-echo(options: { value: string; }) => any
+echo(options: { value: string; }) => Promise<{ value: string; }>
 ```
 
 | Param         | Type                            |
 | ------------- | ------------------------------- |
 | **`options`** | <code>{ value: string; }</code> |
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
 --------------------
 
@@ -49,10 +49,10 @@ echo(options: { value: string; }) => any
 ### activateService()
 
 ```typescript
-activateService() => any
+activateService() => Promise<string>
 ```
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;string&gt;</code>
 
 --------------------
 
@@ -60,10 +60,10 @@ activateService() => any
 ### deactivateService()
 
 ```typescript
-deactivateService() => any
+deactivateService() => Promise<string>
 ```
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;string&gt;</code>
 
 --------------------
 
