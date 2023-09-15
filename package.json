@@ -1,7 +1,7 @@
 {
   "name": "capacitor-suppress-longpress-gesture",
   "version": "0.0.7",
-  "description": "This plugin allows to suppress longpress gesture in iOs system. Designed for capacitor v3",
+  "description": "This plugin allows to suppress longpress gesture in iOS system. Designed for capacitor v5",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -30,7 +30,7 @@
     "verify:ios": "cd ios && pod install && xcodebuild -workspace Plugin.xcworkspace -scheme Plugin -destination generic/platform=iOS && cd ..",
     "verify:web": "npm run build",
     "lint": "npm run eslint && npm run prettier -- --check && npm run swiftlint -- lint",
-    "fmt": "npm run eslint -- --fix && npm run prettier -- --write && npm run swiftlint -- autocorrect --format",
+    "fmt": "npm run eslint -- --fix && npm run prettier -- --write && npm run swiftlint -- --fix --format",
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
@@ -38,27 +38,26 @@
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
+    "ios:pod:install": "cd ios && pod install --repo-update && cd ..",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@capacitor/core": "^5.0.0",
-    "@capacitor/docgen": "^0.0.10",
-    "@capacitor/ios": "^5.0.0",
-    "@ionic/eslint-config": "^0.3.0",
-    "@ionic/prettier-config": "^1.0.1",
-    "@ionic/swiftlint-config": "^1.1.2",
-    "eslint": "^7.11.0",
-    "prettier": "~2.3.0",
-    "prettier-plugin-java": "~1.0.2",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.32.0",
-    "swiftlint": "^1.0.1",
-    "typescript": "~4.1.5"
+    "@capacitor/docgen": "0.2.1",
+    "@capacitor/ios": "5.0.0",
+    "@ionic/eslint-config": "0.3.0",
+    "@ionic/swiftlint-config": "1.1.2",
+    "eslint": "7.32.0",
+    "prettier": "2.3.2",
+    "prettier-plugin-java": "1.0.2",
+    "rimraf": "3.0.2",
+    "rollup": "2.77.2",
+    "swiftlint": "1.0.1",
+    "typescript": "4.1.5"
   },
   "peerDependencies": {
     "@capacitor/core": "^5.0.0"
   },
-  "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
   "eslintConfig": {
     "extends": "@ionic/eslint-config/recommended"
@@ -67,5 +66,8 @@
     "ios": {
       "src": "ios"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
