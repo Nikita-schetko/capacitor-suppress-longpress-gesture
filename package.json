@@ -1,7 +1,7 @@
 {
   "name": "capacitor-suppress-longpress-gesture",
-  "version": "0.0.7",
-  "description": "This plugin allows to suppress longpress gesture in iOS system. Designed for capacitor v5",
+  "version": "0.0.8",
+  "description": "This plugin allows to suppress longpress gesture in iOS system. Designed for capacitor v6, and support previous versions also. Check readme.md",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
